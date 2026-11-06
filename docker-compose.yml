@@ -1,0 +1,13 @@
+services:
+  wireless-ids:
+    build: .
+    container_name: wireless-ids-app
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+    restart: unless-stopped
+    volumes:
+      - ./backend/wireless_ids.db:/app/backend/wireless_ids.db
+

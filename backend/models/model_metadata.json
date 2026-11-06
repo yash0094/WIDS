@@ -1,0 +1,127 @@
+{
+  "model_name": "Wireless-IDS-RandomForest-XAI",
+  "model_version": "rf-awid-v1.0",
+  "algorithm": "RandomForestClassifier(n_estimators=120, max_depth=14)",
+  "trained_at": "2026-10-23T14:41:13.566812Z",
+  "total_training_samples": 10506,
+  "total_test_samples": 2250,
+  "overall_accuracy": 1.0,
+  "macro_f1": 1.0,
+  "weighted_f1": 1.0,
+  "classes": [
+    "Normal",
+    "Deauth_Attack",
+    "Disassoc_Attack",
+    "Rogue_AP",
+    "Beacon_Flood"
+  ],
+  "features": [
+    "frame_length",
+    "frame_type",
+    "frame_subtype",
+    "retry_flag",
+    "seq_num",
+    "signal_dbm",
+    "packet_rate",
+    "delta_time",
+    "auth_code",
+    "is_broadcast",
+    "channel",
+    "payload_entropy"
+  ],
+  "per_class_metrics": [
+    {
+      "label": "Normal",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 270,
+      "false_positive_rate": 0.0
+    },
+    {
+      "label": "Deauth_Attack",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 338,
+      "false_positive_rate": 0.0
+    },
+    {
+      "label": "Disassoc_Attack",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 270,
+      "false_positive_rate": 0.0
+    },
+    {
+      "label": "Rogue_AP",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 1080,
+      "false_positive_rate": 0.0
+    },
+    {
+      "label": "Beacon_Flood",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 292,
+      "false_positive_rate": 0.0
+    }
+  ],
+  "confusion_matrix": [
+    [
+      1080,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      338,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      270,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      292,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      270
+    ]
+  ],
+  "feature_importances": {
+    "frame_length": 0.0825,
+    "frame_type": 0.0504,
+    "frame_subtype": 0.2351,
+    "retry_flag": 0.0007,
+    "seq_num": 0.053,
+    "signal_dbm": 0.0886,
+    "packet_rate": 0.1738,
+    "delta_time": 0.067,
+    "auth_code": 0.1161,
+    "is_broadcast": 0.0058,
+    "channel": 0.0001,
+    "payload_entropy": 0.1268
+  },
+  "holdout_method": "Session and Stratified Holdout (15% unseen test set)",
+  "leakage_prevention_notes": "Identifier columns (MAC, SSID) excluded from feature vector; time-based delta and packet rates normalized independently."
+}

@@ -1,0 +1,9 @@
+timestamp,source_ref,frame_length,frame_type,frame_subtype,retry_flag,seq_num,signal_dbm,packet_rate,delta_time,auth_code,is_broadcast,channel,payload_entropy,src_mac,dst_mac,bssid,ssid
+2026-10-22T11:30:00,pcap_seq_2000,44,0,12,0,450,-42.0,190.0,0.004,7,0,6,2.5,00:14:6C:7E:40:80,40:4E:36:12:34:56,00:14:6C:7E:40:80,Corp_Secure_Net
+2026-10-22T11:30:03,pcap_seq_2001,44,0,12,0,451,-42.0,190.0,0.004,7,0,6,2.5,00:14:6C:7E:40:80,40:4E:36:12:34:56,00:14:6C:7E:40:80,Corp_Secure_Net
+2026-10-22T11:30:06,pcap_seq_2002,44,0,12,0,452,-42.0,190.0,0.004,7,0,6,2.5,00:14:6C:7E:40:80,40:4E:36:12:34:56,00:14:6C:7E:40:80,Corp_Secure_Net
+2026-10-22T11:30:09,pcap_seq_2003,44,0,12,0,453,-42.0,190.0,0.004,7,0,6,2.5,00:14:6C:7E:40:80,40:4E:36:12:34:56,00:14:6C:7E:40:80,Corp_Secure_Net
+2026-10-22T11:30:14,pcap_seq_2010,48,0,10,1,456,-43.0,140.0,0.007,8,0,6,2.6,00:14:6C:7E:40:80,40:4E:36:12:34:56,00:14:6C:7E:40:80,Corp_Secure_Net
+2026-10-22T11:30:22,pcap_seq_2020,182,0,8,0,10,-31.0,35.0,0.028,0,1,11,4.1,02:00:AA:BB:CC:DD,ff:ff:ff:ff:ff:ff,02:00:AA:BB:CC:DD,Corp_Secure_Net
+2026-10-22T11:30:30,pcap_seq_2021,182,0,8,0,11,-31.0,35.0,0.028,0,1,11,4.1,02:00:AA:BB:CC:DD,ff:ff:ff:ff:ff:ff,02:00:AA:BB:CC:DD,Corp_Secure_Net
+2026-10-22T11:30:38,pcap_seq_2022,182,0,8,0,12,-31.0,35.0,0.028,0,1,11,4.1,02:00:AA:BB:CC:DD,ff:ff:ff:ff:ff:ff,02:00:AA:BB:CC:DD,Corp_Secure_Net
