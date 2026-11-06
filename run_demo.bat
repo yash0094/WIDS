@@ -10,5 +10,5 @@ if exist "venv\Scripts\activate.bat" (
     call venv\Scripts\activate.bat
 )
 
-python start.py
+python start.py %*
 pause

@@ -52,9 +52,8 @@ echo.
 :: 5. Launch turnkey application
 echo ======================================================================
 echo  [+] Launching Self-Explaining Wireless IDS...
-echo  -> Web Dashboard: http://localhost:8000
 echo ======================================================================
-python start.py
+python start.py %*
 
 pause
 
